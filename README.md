@@ -69,5 +69,16 @@ A continuacion os dejo un pequeño video de como Marvin ha hecho este pequeño l
 
 https://github.com/user-attachments/assets/d4b07c5d-308e-4ce0-a138-df33238a739b
 
+Empleando Inkspace he desarrollado un dibujo de la estructura que debe de tener la mano robótica que vamos a recrear. Es un diseño simple a modo de entendimiento de las diferentes partes que la componen. 
+
+Este es el diseño que hemos obtenido:
+
+<div align="center">
+  <a>
+    <img src="images/mano.svg" alt="Mano_svg" width="650" height="200">
+  </a>
+
+</div>
+
 <p align="right">(<a href="#readme-top">inicio</a>)</p>
 
