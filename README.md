@@ -75,7 +75,7 @@ Este es el diseño que hemos obtenido:
 
 <div align="center">
   <a>
-    <img src="images/mano.svg" alt="Mano_svg" width="650" height="200">
+    <img src="images/Mano.svg" alt="Mano_svg" width="650" height="400">
   </a>
 
 </div>
