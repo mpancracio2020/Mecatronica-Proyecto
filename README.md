@@ -82,3 +82,14 @@ Este es el diseño que hemos obtenido:
 
 <p align="right">(<a href="#readme-top">inicio</a>)</p>
 
+En materia del diseño vectorial, también es posible compatibilizarlo con otras técnicas, y para aplicarlo también al proyecto desde otra perspectiva, se me ha ocurrido investigar conversores de gráficos. Existen numerosos convertidores online gratuitos y algunos otros de pago que mejoran los resultados, y esto facilita que ciertas imágenes o diseños puedan ser vectorizados con herramientas también distintas a Inkscape y que no están pensadas en un principio para el diseño vectorial.
+
+Aplicando estas herramientas a nuestro proyecto, Moisés ha diseñado un dibujo simple de algunos componentes de la mano, que también puede servir de apoyo a diagramas explicativos o información que se quiera enseñar y explicar del proyecto:
+
+<p align="center">
+  <img src="images/composicion_dedo.png" alt="Alt Imagen 1" width="49%">
+  <img src="images/composicion_dedo_vect_color.svg" alt="Alt Imagen 2" width="49%">
+</p>
+
+De las dos imágenes superiores, la izquierda pertenece a un formato en .png, siendo el fichero de dibujo original. Por otra parte la imagen derecha es el resultado de pasar la anterior por un conversor a svg (formato vectorial). El utlizado en este caso ha sido:
+- https://png2svg.com/es/
