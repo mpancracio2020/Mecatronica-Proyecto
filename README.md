@@ -93,3 +93,7 @@ Aplicando estas herramientas a nuestro proyecto, Moisés ha diseñado un dibujo 
 
 De las dos imágenes superiores, la izquierda pertenece a un formato en .png, siendo el fichero de dibujo original. Por otra parte la imagen derecha es el resultado de pasar la anterior por un conversor a svg (formato vectorial). El utlizado en este caso ha sido:
 - https://png2svg.com/es/
+
+Dejo a continuación un vídeo del proceso de diseño original de la imagen superior, en un programa de diseño no vectorial:
+
+![Time-lapse](./videos/video_diseño_dedo.gif)
