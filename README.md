@@ -97,3 +97,13 @@ De las dos imágenes superiores, la izquierda pertenece a un formato en .png, si
 Dejo a continuación un vídeo del proceso de diseño original de la imagen superior, en un programa de diseño no vectorial:
 
 ![Time-lapse](./videos/video_diseño_dedo.gif)
+
+
+## Sesiones 6-7-8-9 | Diseño 3D.
+
+En cuanto al diseño en 3D que hemos implementado en FreeCad ha sido una estructura simple del ejemplo de dibujo en 2D de Inkspace, obteniendo una estructuracompuesta por rectangulos similar a una mano, pero bastante simplificada. Mostrando en ella todos las piezas en las que tenemos pensado estructurarla.
+
+La estructura se encuentra en el siguiente link: ![Mano.FCStd](https://github.com/mpancracio2020/Mecatronica-Proyecto/tree/main/images/Mano.FCStd)
+
+En cuanto al resto de diseño 3D hemos utilizado Ultimaker Cura para diseñar las piezas basandonos en el proyecto original del cual hemos sacado la idea. Hemos modificado los archivos (.lts) de los componentes aportando diferentes valores para obtener la mejor impresión de las piezas en nuestras impresoras 3D.
+
