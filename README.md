@@ -103,9 +103,34 @@ Dejo a continuación un vídeo del proceso de diseño original de la imagen supe
 
 En cuanto al diseño en 3D que hemos implementado en FreeCad ha sido una estructura simple del ejemplo de dibujo en 2D de Inkspace, obteniendo una estructuracompuesta por rectangulos similar a una mano, pero bastante simplificada. Mostrando en ella todos las piezas en las que tenemos pensado estructurarla.
 
-La estructura se encuentra en el siguiente link: ![Mano.FCStd](https://github.com/mpancracio2020/Mecatronica-Proyecto/tree/main/images/Mano.FCStd)
+La estructura se encuentra en el siguiente link: [Mano.FCStd](https://github.com/mpancracio2020/Mecatronica-Proyecto/tree/main/images/Mano.FCStd)
 
 En cuanto al resto de diseño 3D hemos utilizado Ultimaker Cura para diseñar las piezas basandonos en el proyecto original del cual hemos sacado la idea. Hemos modificado los archivos (.lts) de los componentes aportando diferentes valores para obtener la mejor impresión de las piezas en nuestras impresoras 3D.
+
+---
+
+# **Diseño Electrónico de la Mano de Zeus**
+## 1. Componentes:
+Para crear y diseñar el circuito electronico primero debemos elegir que componentes son necesarios y los más óptimos para el correcto funcionamiento de la mano.
+
+- **Arduino UNO / MEGA:** primero hemos elegido como cerebro de nuestro robot un arduino UNO ya que es suficiente para poder comandar el resto de componentes. Si se llega a aumentar el numero de componentes como el añadir otro brazo, usaremos un arduino Mega para poder tener mas pines a los que conectar todos los componentes.
+<br>
+<image src="https://github.com/vbarcena2020/My_personal_page/blob/master/assets/images/arduinos.jpg?raw=true"></image> 
+<br>
+- **Servos:** en concreto el modelo tower pro mg996r, un servo de 360 grados el cual nos permite una rotación completa y necesaria para mover los dedos y muñeca los ángulos necesarios. En concreto usaremos 6 servos por cada mano.
+<br>
+<image src="https://github.com/vbarcena2020/My_personal_page/blob/master/assets/images/servo.jpg?raw=true"></image> 
+<br>
+- **Protoboard:** Usaremos una protoboard para tener mejor conectados y controlados todos los componentes.
+- **Cables Macho-Macho:** para conectar los componentes entre sí.
+
+## 2. Circuito (Fritzing):
+Para poder visualizar de una manera mas simple y rapida sin tener que conectar de forma presencial todo el circuito hemos usado la aplicación Fritzing para poder diseñar el circuito. Esta nos permite añadir los componentes necesarios y los modelos específicos que utilizaremos.
+
+El circuito diseñado es el siguiente:
+<br>
+<image src="https://github.com/vbarcena2020/My_personal_page/blob/master/assets/images/fritzing_design.png?raw=true"></image> 
+<br>
 
 ---
 
