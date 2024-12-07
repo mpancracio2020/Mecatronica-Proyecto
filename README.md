@@ -187,3 +187,94 @@ Teniendo el diseño 3d de las piezas, ajustamos adecuadamente los tamaños y uti
   <img src="images/foto_brazo_completo.jpeg" alt="visualización_virtual" width="65%">
 </p>
 
+# **Diseño esquemático por componentes**
+
+Para simplificar el montaje, y describir de manera más sencilla la forma en que se realizó, queda a continuación un diagrama dibujado y comentado, con sus elementos explicados en detalle más adelante en este mismo documento:
+
+<div style="display: flex; align-items: left;">
+
+<div style="flex: 1;">
+<img src="images/diagrama_elementos_mano.jpg" alt="diagrama" width="80%">
+</div>
+
+<div style="flex: 1;">
+<table>
+  <tr>
+    <td>F1 - F6</th>
+    <td>Falanges de la superior a inferior, de todo dedo salvo el pulgar</th>
+  </tr>
+  <tr>
+    <td>T1 - T6</td>
+    <td>Falanges de la superior a inferior, del dedo pulgar</td>
+  </tr>
+  <tr>
+    <td>PA</td>
+    <td>Pieza intermedia entre la parte central de la mano y el dedo anular. Esta pieza rota en torno a un tornillo que la encaja</td>
+  </tr>
+  <tr>
+    <td>PB</td>
+    <td>Pieza intermedia entre la parte central de la mano y el dedo meñique. Esta pieza rota en torno a un tornillo que la encaja</td>
+  </tr>
+  <tr>
+    <td>PC</td>
+    <td>Pieza central de la mano sobre la cual se ensamblan los dedos pulgar, índice y corazón, y las piezas intermedias PA y PB</td>
+  </tr>
+  <tr>
+    <td>MR</td>
+    <td>Parte rotativa de la muñeca, apoyada sobre la muñeca fija, y ofreciendo movimiento en torno al servomotor interno a la misma</td>
+  </tr>
+  <tr>
+    <td>MF</td>
+    <td>Muñeca fija, conjunto de piezas y cobertura que sirven de apoyo a la muñeca rotativa para ejercer su giro</td>
+  </tr>
+  <tr>
+    <td>SVM</td>
+    <td>Servomotor de la muñeca. Situado interno a la muñeca fija, y anclado a la rotativa</td>
+  </tr>
+  <tr>
+    <td>AS</td>
+    <td>Antebrazo superior. Conjunto de piezas encarcasadas más cortas que el antebrazo posterior, uniendo la muñeca con el mismo</td>
+  </tr>
+  <tr>
+    <td>SLC & SRC</td>
+    <td>Esquinas superior izquierda (SLC) y superior derecha (SRC) de la carcasa interna del antebrazo posterior o largo. Deben ir alineadas con ILC e IRC respectivamente</td>
+  </tr>
+  <tr>
+    <td>ILC & IRC</td>
+    <td>Esquinas superior izquierda (ILC) y superior derecha (IRC) de la carcasa externa del antebrazo largo. La carcasa de la que forman parte se alinea con la previamente mencionada y la recubre, dando forma al antebrazo</td>
+  </tr>
+  <tr>
+    <td>PC1</td>
+    <td>Conjunto de piezas centrales al antebrazo largo, ensambladas sobre la carcasa interna para servir de guía para los cables o fibras que mueven los dedos</td>
+  </tr>
+  <tr>
+    <td>SV1 - SV6</td>
+    <td>Servomotores numerados del 1 al 6, Componen el sistema de movimiento de los dedos de la mano, uniéndose a ellos por medio de unas cuerdas (C alpha) ancladas a los servos gracias a unas guías circulares</td>
+  </tr>
+  <tr>
+    <td>SVN</td>
+    <td>Abreviatura utilizada para referirse a "cualquier servomotor del antebrazo", pudiendo ser desde SV1 hasta SV6 pero no SVM</td>
+  </tr>
+  <tr>
+    <td>C alpha</td>
+    <td>Abreviatura utilizada para referirse a "cualquier cuerda ó fibra encargada de guiar el movimiento de los dedos desde su unión a un servomotor SVN" </td>
+  </tr>
+</table>
+</div>
+
+</div>
+
+Aunque en el diagrama aparecen indicados también una serie de elementos que forman parte del dibujo, y la guía puede ser de ayuda para entender las abreviaturas, hay algunas cosas más que hay que tener en cuenta relativas al montaje: 
+- Cada dedo está dividido en el mismo número de falanges, y cada falange cuenta con uniones tanto fijas como rotativas, indicadas estas últimas con un icono explicativo en la imagen superior.
+- Las falanges de los dedos, tanto pulgar como índice, corazón, anular y meñique, cuentan con guías para los cables en las uniones articuladas, y con aberturas en aquellas uniones fijas, para que sea posible la unión entre la parte final de cada dedo y el servomotor que lo controlará.
+- Además de los tornillos de ensamblaje que se han dibujado arriba, el montaje requirió de la utilización de otros tornillos metálicos no indicados previamente, así como algunos elementos adicionales para la correcta sujeción de algunas piezas.
+- La parte interior del antebrazo largo, así como el antebrazo superior en detalle, que se indican previamente y se encuentran explicados, cuentan con otros elementos internos en su estructura, no mencionados por no ser de especial relevancia para la comprensión del funcionamiento del sistema mecánico que conforma la Mano de Zeus
+
+
+
+<!-- | ![diagrama](images/diagrama_elementos_mano.jpg) | Elementos indicados |
+|-------------------------------------------------|---------------------|
+|                                                 | Nombre | Significado |
+|                                                 | -----  | ----------  |
+|                                                 | Dato 1 | Dato 2      |
+|                                                 | Dato 3 | Dato 4      | -->
