@@ -50,8 +50,17 @@
   </p>
 </div>
 
+---
+## **Índice**
+1. [Diseño 2D](#id1)
+2. [Diseño 3D](#id2)
+3. [Diseño Electrónico de la Mano de Zeus](#id3)
+4. [Montaje de la Mano de Zeus](#id4)
+5. [Código de la Mano de Zeus](#id5)
 
-## Sesiones 3-4-5 | Diseño 2D.
+<div id='id1' />
+
+## Diseño 2D
 
 En estas sesiones nos centramos en el diseño 2D. He aplicado los conocimientos en clase para diseñar un pequeño logo que decore el proyecto.
 Requisitos:
@@ -99,7 +108,9 @@ Dejo a continuación un vídeo del proceso de diseño original de la imagen supe
 ![Time-lapse](./videos/video_diseño_dedo.gif)
 
 
-## Sesiones 6-7-8-9 | Diseño 3D.
+<div id='id2' />
+
+## **Diseño 3D**
 
 En cuanto al diseño en 3D que hemos implementado en FreeCad ha sido una estructura simple del ejemplo de dibujo en 2D de Inkspace, obteniendo una estructuracompuesta por rectangulos similar a una mano, pero bastante simplificada. Mostrando en ella todos las piezas en las que tenemos pensado estructurarla.
 
@@ -107,36 +118,66 @@ La estructura se encuentra en el siguiente link: [Mano.FCStd](https://github.com
 
 En cuanto al resto de diseño 3D hemos utilizado Ultimaker Cura para diseñar las piezas basandonos en el proyecto original del cual hemos sacado la idea. Hemos modificado los archivos (.lts) de los componentes aportando diferentes valores para obtener la mejor impresión de las piezas en nuestras impresoras 3D.
 
----
 
-# **Diseño Electrónico de la Mano de Zeus**
-## 1. Componentes:
+<div  id='id3' /> 
+
+## **Diseño Electrónico de la Mano de Zeus**
+
+
+
+### 1. Componentes:
 Para crear y diseñar el circuito electronico primero debemos elegir que componentes son necesarios y los más óptimos para el correcto funcionamiento de la mano.
 
 - **Arduino UNO / MEGA:** primero hemos elegido como cerebro de nuestro robot un arduino UNO ya que es suficiente para poder comandar el resto de componentes. Si se llega a aumentar el numero de componentes como el añadir otro brazo, usaremos un arduino Mega para poder tener mas pines a los que conectar todos los componentes.
-<br>
-<image src="https://github.com/vbarcena2020/My_personal_page/blob/master/assets/images/arduinos.jpg?raw=true"></image> 
-<br>
-- **Servos:** en concreto el modelo tower pro mg996r, un servo de 360 grados el cual nos permite una rotación completa y necesaria para mover los dedos y muñeca los ángulos necesarios. En concreto usaremos 6 servos por cada mano.
-<br>
-<image src="https://github.com/vbarcena2020/My_personal_page/blob/master/assets/images/servo.jpg?raw=true"></image> 
-<br>
-- **Protoboard:** Usaremos una protoboard para tener mejor conectados y controlados todos los componentes.
-- **Cables Macho-Macho:** para conectar los componentes entre sí.
 
-## 2. Circuito (Fritzing):
+<div align="center">
+  <a>
+    <img src="images/arduinos.jpg" alt="Mano_svg" width="450" height="200">
+  </a>
+
+</div>
+
+- **Servos:** en concreto el modelo tower pro mg996r, un servo de 360 grados el cual nos permite una rotación completa y necesaria para mover los dedos y muñeca los ángulos necesarios. En concreto usaremos 6 servos por cada mano.
+
+<div align="center">
+  <a>
+    <img src="images/servo.jpg" alt="Mano_svg" width="350" height="200">
+  </a>
+
+</div>
+
+- **Protoboard:** la usaremos para tener mejor conectados y controlados todos los componentes.
+- **Cables Macho-Macho / Macho-Hembra:** los usaremos para conectar los componentes entre sí.
+- **Baterìa:** la necesitaremos implementar también para poder mover los servos y que estos puedan mover los dedos.
+
+### 2. Circuito (Fritzing):
 Para poder visualizar de una manera mas simple y rapida sin tener que conectar de forma presencial todo el circuito hemos usado la aplicación Fritzing para poder diseñar el circuito. Esta nos permite añadir los componentes necesarios y los modelos específicos que utilizaremos.
 
-El circuito diseñado es el siguiente:
-<br>
-<image src="https://github.com/vbarcena2020/My_personal_page/blob/master/assets/images/fritzing_design.png?raw=true"></image> 
-<br>
+El circuito inicial diseñado es el siguiente:
 
----
 
-# Montaje de la Mano de Zeus
+<div align="center">
+  <a>
+    <img src="images/fritzing_design.png" alt="Mano_svg" width="450" height="200">
+  </a>
 
-## 1. Componentes:
+</div>
+
+Después de probar este circuito nos dimos cuenta de que los servos se movian pero no tenían la fuerza necesaria para poder mover los dedos tirando de los hilos, debido a su peso. Por lo cual se nos ocurrió posteriormente el incluir una batería solo para alimentar a todos los servos. Después de añadirla el circuito diseñado queda de la siguiente forma:
+
+<div align="center">
+  <a>
+    <img src="images/fritzing_design_2.png" alt="Mano_svg" width="450" height="300">
+  </a>
+
+</div>
+
+<div  id='id4' /> 
+
+## Montaje de la Mano de Zeus
+
+
+### 1. Componentes:
 
 Teniendo el diseño 3d de las piezas, ajustamos adecuadamente los tamaños y utilizamos una impresora 3d para imprimir cada una. En total para la mano derecha desarrollada fueron utilizadas las siguientes partes:
 - **Dedo meñique:** conformado por 6 piezas, ensambladas posteriormente entre sí. Adaptado del modelo original: [auriculaire-finger](https://inmoov.fr/inmoov-stl-3d/?bodyparts=Right-Hand&parts=Auriculaire3.stl)
@@ -187,7 +228,7 @@ Teniendo el diseño 3d de las piezas, ajustamos adecuadamente los tamaños y uti
   <img src="images/foto_brazo_completo.jpeg" alt="visualización_virtual" width="65%">
 </p>
 
-# **Diseño esquemático por componentes**
+### 2. **Diseño esquemático por componentes**
 
 Para simplificar el montaje, y describir de manera más sencilla la forma en que se realizó, queda a continuación un diagrama dibujado y comentado, con sus elementos explicados en detalle más adelante en este mismo documento:
 
@@ -270,8 +311,126 @@ Aunque en el diagrama aparecen indicados también una serie de elementos que for
 - Además de los tornillos de ensamblaje que se han dibujado arriba, el montaje requirió de la utilización de otros tornillos metálicos no indicados previamente, así como algunos elementos adicionales para la correcta sujeción de algunas piezas.
 - La parte interior del antebrazo largo, así como el antebrazo superior en detalle, que se indican previamente y se encuentran explicados, cuentan con otros elementos internos en su estructura, no mencionados por no ser de especial relevancia para la comprensión del funcionamiento del sistema mecánico que conforma la Mano de Zeus
 
-### Esquematización
+
+### 3. Esquematización
 
 Queda a continuación un breve time lapse de la **parte final** del diseño del esquema superior:
 
 ![time-lapse](./videos/video_diseño_esquema.gif)
+
+<div  id='id5' /> 
+
+## Código de la Mano de Zeus
+
+El código de la mano esta desarrollado en tres lenguajes, en C++, en Arduino y en Python. 
+
+### Instalación 
+
+Para que funcione correctamente el programa es necesario instalar previamente algunas librerías, a parte de los lenguajes usados.
+
+Librerías utilizadas:
+
+| Librerías | Comando de terminal  | Utilidad
+|:------------- |:---------------:| :---------------|
+| numpy         | pip install numpy | crear y usar vectores
+| tkinter       | pip install tkinter | crear una interfaz interactiva
+| mediapipe     | pip install mediapipe | detectar cuerpos, brazos y manos
+| pillow        | pip install pillow | procesar imagenes |
+
+
+En cuanto al desarrollo del código de la mano, lo hemos dividido en varias partes:
+
+### Movimiento
+
+La primera de las partes es el movimiento de la mano. En esta, solo nos centramos en producir el movimiento de los dedos y la muñeca a partir del uso de servomotores. Esta parte está programada en Arduino y C++.
+
+Para comenzar, intentamos entender cómo funcionaban nuestros servos. Estos se mueven al recibir un valor de 0 a 180, los cuales simbolizan velocidades. El valor 90 representa velocidad nula; por encima de este, el servo gira en sentido antihorario, y por debajo, en sentido horario.
+
+Para probar el correcto funcionamiento de los servos, utilizamos un código simple que se encarga de girar los servos en ambos sentidos, de forma intercalada.
+
+~~~
+#include <Servo.h>
+
+Servo myservo; 
+int currentPos = 0;
+int targetPos = 90;
+int speedLeft = 80;
+int speedRight = 100;
+int stopSpeed = 90;
+
+void setup() {
+  myservo.attach(3);
+  myservo.write(stopSpeed);
+  delay(1000);
+}
+
+void loop() {
+  targetPos = 180; 
+  moveServoTo(targetPos);  
+  
+  targetPos = 0;
+  moveServoTo(targetPos);
+}
+
+void moveServoTo(int targetPos) {
+  if (targetPos > currentPos) {
+    myservo.write(speedRight); 
+  } else if (targetPos < currentPos) {
+    myservo.write(speedLeft);
+  }
+  delay(2000);
+  myservo.write(stopSpeed); 
+  currentPos = targetPos;
+}
+~~~
+
+Después creamos un código que mueve los servos por ángulos, estimando el tiempo que tarda en moverse de un ángulo a otro. A este código solo se le debe pasar el ángulo al cual se quiere ir, y moverá el servo lo necesario para llegar a esa posición. 
+
+El código completo está en los documentos [ServoM.cpp](./src/ServoM/ServoM.cpp) y [ServoM.h](./src/ServoM/ServoM.h).
+
+### Comunicación
+
+Tras desarrollar el código de movimiento de los servos, nos preguntamos cuál es la mejor manera de comandar los movimientos. Para ello se nos ocurrieron diferentes ideas.
+
+La primera fue usar una ESP32 y comunicarnos con ella a través de WiFi desde el ordenador. No obstante, esta idea la descartamos para los primeros pasos, ya que, aparte de no contar con una ESP32, no queríamos complicar más el código con una comunicación muy compleja. Además, conseguir la reactividad deseada nos costaría bastante. Sin embargo, el uso de una ESP32 y WiFi es una idea a desarrollar para el prototipo final.
+
+La segunda fue el uso de la comunicación serial. Esta es la que hemos decidido usar, ya que es bastante sencilla de programar y nos da una reactividad muy elevada. Como único inconveniente, el Arduino debe estar conectado al ordenador; aunque, de momento, al tener el Arduino accesible, no es un problema.
+
+Nuestra comunicación está programada en Arduino y es el programa que se encarga de recibir los ángulos de la parte de detección y pasárselos a la parte de movimiento. 
+
+El código completo está en el documento [ServoM.ino](./src/ServoM/ServoM.ino)
+
+### Detección
+
+Después de conseguir un buen funcionamiento del movimiento de los servos y de la comunicación, nos planteamos de qué manera íbamos a detectar y elegir cuáles eran los ángulos que les pasaríamos a los servos. 
+
+La primera idea que se nos ocurrió fue escribir los ángulos por teclado, la opción más simple, pero un poco lenta, ya que debíamos escribir los ángulos a mano constantemente y para cada servo. Por lo tanto, la descartamos de inmediato.
+
+La siguiente idea fue, en lugar de escribirlos, desarrollar unos controles deslizantes para todos los servos y enviar el valor correspondiente. Este era un método sencillo y más rápido. No obstante, aunque no era lo suficientemente cómodo y rápido para el objetivo del proyecto, lo dejamos como una opción para pruebas, en un modo aparte.
+
+<p align="center">
+  <img src="images/detect_manual.png" alt="detect_manual" width="25.5%">
+</p>
+
+Finalmente, después de pensarlo mucho, se nos ocurrió, a partir de una asignatura que cursamos llamada Visión Artificial, utilizar una cámara para obtener una imagen de nuestros brazos y, a partir de esa imagen, calcular los ángulos de los dedos. Esto nos permitía una detección constante y rápida. El único inconveniente era que era más complejo de desarrollar, aunque finalmente lo conseguimos.
+
+<p align="center">
+  <img src="images/detect_image.png" alt="detect_image" width="45.5%">
+  <img src="images/detect_angles.png" alt="detect_angles" width="51%">
+</p>
+
+La detección completa está programada en Python y se ejecuta desde el ordenador o dispositivo, al cual está conectado el Arduino por conexión Serial.
+
+El código completo está en el documento [mano_zeus.py](./src/handTracking/mano_zeus.py)
+
+### Interfaz
+
+Para terminar, se nos ocurrio desarrollar una simple interfaz desde la cual el usuario pueda interactuar con el programa para así elegir que modo quiere y que parametros quiere que se muestren, mientras que este puede observar la detección en tiempo real y los angulos que se pasan al Arduino.
+
+Esta parte también esta desarrollada en Python y esta es una imagen de la interfaz desarrollada:
+
+<p align="center">
+  <img src="images/interfaz.png" alt="interfaz" width="85.5%">
+</p>
+
+El código completo está en el documento [mano_zeus.py](./src/handTracking/mano_zeus.py)
