@@ -148,7 +148,12 @@ Para crear y diseñar el circuito electronico primero debemos elegir que compone
 
 - **Protoboard:** la usaremos para tener mejor conectados y controlados todos los componentes.
 - **Cables Macho-Macho / Macho-Hembra:** los usaremos para conectar los componentes entre sí.
-- **Baterìa:** la necesitaremos implementar también para poder mover los servos y que estos puedan mover los dedos.
+- **Batería:** la necesitaremos implementar también para poder mover los servos y que estos puedan mover los dedos.
+<div align="center">
+  <a>
+    <img src="images/battery.png" alt="Mano_svg" width="350" height="200">
+  </a>
+</div>
 
 ### 2. Circuito (Fritzing):
 Para poder visualizar de una manera mas simple y rapida sin tener que conectar de forma presencial todo el circuito hemos usado la aplicación Fritzing para poder diseñar el circuito. Esta nos permite añadir los componentes necesarios y los modelos específicos que utilizaremos.
