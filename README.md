@@ -116,6 +116,38 @@ En cuanto al diseño en 3D que hemos implementado en FreeCad ha sido una estruct
 
 La estructura se encuentra en el siguiente link: [Mano.FCStd](https://github.com/mpancracio2020/Mecatronica-Proyecto/tree/main/images/Mano.FCStd)
 
+Sin embargo, este modelo 3D era una simplificación del modelo real que queríamos crear y estaba bastante lejos de la complejidad del modelo real que utilizamos. Por lo tanto, me propuse simular una versión más realista del modelo impreso utilizando sus dimensiones para crear un modelo 3D más simple que todos puedan usar y modificar según sus necesidades.
+
+Creé este modelo en FreeCAD utilizando la herramienta "Part" para el diseño 3D general y la herramienta "TechDraw" para elaborar el plano y extraer las medidas.
+
+Aquí están algunas imágenes del modelo que desarrollé, el cual es más similar al real y abarca únicamente la parte de la mano, incluyendo los huecos para pasar los hilos y mover los dedos. La muñeca y el antebrazo no están diseñados.
+
+<p align="center"> 
+  <img src="images/dedo_3d.png?raw=true" width="228" height="150"> 
+  <img src="images/palma_3d.png?raw=true" width="555" height="150"> 
+</p> 
+<p align="center"> 
+  <img src="images/mano_3d_1.png?raw=true" width="249.3" height="150"> 
+  <img src="images/mano_3d_2.png?raw=true" width="350" height="150">
+  <img src="images/mano_3d_3.png?raw=true" width="286" height="150"> 
+  <img src="images/mano_3d_4.png?raw=true" width="286" height="150"> 
+</p>
+
+Este es un video del diseño final.
+
+<p align="center"> 
+  <img src="images/video3d.gif?raw=true"> 
+  </p>
+
+El plano dibujado es el siguiente:
+
+<p align="center"> 
+  <img src="images/mano_plano.png?raw=true" width="60%"> 
+  <img src="images/mano.svg?raw=true" width="60%"> 
+</p>
+
+Y el archivo con todo el diseño 3D lo puedes encontrar en [hand.FCStd](https://github.com/mpancracio2020/Mecatronica-Proyecto/tree/main/images/hand.FCStd)
+
 En cuanto al resto de diseño 3D hemos utilizado Ultimaker Cura para diseñar las piezas basandonos en el proyecto original del cual hemos sacado la idea. Hemos modificado los archivos (.lts) de los componentes aportando diferentes valores para obtener la mejor impresión de las piezas en nuestras impresoras 3D.
 
 
