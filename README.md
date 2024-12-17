@@ -355,6 +355,46 @@ Queda a continuación un breve time lapse de la **parte final** del diseño del 
 
 ![time-lapse](./videos/video_diseño_esquema.gif)
 
+### 4. Impresión y ensamblaje
+
+* Primeras impresiones.
+
+
+A continuación se muestran la imagenes de las primeras impresiones de los ficheros stl que nos proporciona el proyecto original.
+
+<div align="center">
+  <a>
+    <img src="images/Mano.jpeg" alt="Logo" width="350" height="350">
+  </a>
+ <a>
+    <img src="images/Antebrazo.jpeg" alt="Logo" width="350" height="350">
+  </a>
+ <a>
+    <img src="images/Antebrazo2.jpeg" alt="Logo" width="350" height="350">
+  </a>
+ <a>
+    <img src="images/Brazo.jpeg" alt="Logo" width="350" height="350">
+  </a>
+  <a>
+    <img src="images/f1.jpeg" alt="Logo" width="350" height="350">
+  </a>
+  <a>
+    <img src="images/f2.jpeg" alt="Logo" width="350" height="350">
+  </a>
+
+</div>
+La totalidad de las impresiones de han hecho en una impresora <a href="https://www.creality.com/es/products/ender-3-3d-printer"><strong>Creality Ender 3 »</strong></a>
+
+* Problemas y dificultades.
+
+El mayor problema de todos a la hora de montar las piezas es el material de las mismas, PLA. Esto provocaba que a la hora de encajar o generar una fuerza sobre ellas que no estaba
+preparada para soportar, rompiamos la pieza. Han sido varias las piezas que se han vuelto a imprimir debido a roturas. 
+
+Hay que tener en cuenta que hay muchas fricciones y tensiones simultaneas en el mecanismo completo de una sola mano, un total de 6 servos independientes que actuan para cada dedo y muñeca,
+que esto funcione acorde es bastante importante, debido a que un minimo error puede provocar las roturas mencionadas anteriormente.
+
+
+
 ## Soporte para el antebrazo
 
 Como parte adicional a la mano de Zeus en sí, decidimos buscar una manera de mantenerla sujeta sin necesidad de apoyarla directamente sobre la mesa, o de sujetarla para cualquier tipo de demostración y presentación. Esto nos llevó a pensar en un soporte que se adaptase a la forma del antebrazo y nos permitiera mantenerlo en posición horizontal, ya que podría ser algo desarrollado en una sola pieza, y más sencillo que un soporte que la mantuviera en vertical a la hora de hacer el diseño. Además, esta posición también resulta más segura, ya que reduce casi al mínimo la posibilidad de que pudiera caerse el conjunto.
