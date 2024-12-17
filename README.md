@@ -355,6 +355,82 @@ Queda a continuación un breve time lapse de la **parte final** del diseño del 
 
 ![time-lapse](./videos/video_diseño_esquema.gif)
 
+## Soporte para el antebrazo
+
+Como parte adicional a la mano de Zeus en sí, decidimos buscar una manera de mantenerla sujeta sin necesidad de apoyarla directamente sobre la mesa, o de sujetarla para cualquier tipo de demostración y presentación. Esto nos llevó a pensar en un soporte que se adaptase a la forma del antebrazo y nos permitiera mantenerlo en posición horizontal, ya que podría ser algo desarrollado en una sola pieza, y más sencillo que un soporte que la mantuviera en vertical a la hora de hacer el diseño. Además, esta posición también resulta más segura, ya que reduce casi al mínimo la posibilidad de que pudiera caerse el conjunto.
+
+Para el soporte, tomando de base un fichero stl, aplicamos ciertas modificaciones realizadas con blender para adaptarlo a nuestras necesidades de tamaño, número de caras y vértices, forma, etc. Las modificaciones aplicadas fueron realizadas utilizando Blender 2.79b, una versión que inicialmente dificulta la compatibilidad con stl, pero que haciendo uso de dos plugins sirvió para aquello que necesitábamos. Dichos plugins quedan a continuación para su descarga y utilización en esta misma versión o similares:
+
+- [blender2ogre.zip](./add-ons/blender2ogre-0.6.0.zip)
+- [ImportExporTL-blender.zip](./add-ons/ImportExportTL_blender25x_v0.6.2.zip)
+
+Cualquiera que quiera replicar la utilización debe descargar los ficheros previos como zip, sin extraer su contenido y añadirlos tal cual en el apartado de *"Add-ons"* dentro de la pestaña de *"User Preferences"* en el editor de Blender. Una vez hecho esto, cualquier problema de compatibilidad con ficheros stl debería quedar resuelto, tanto para importar como para exportar este tipo de ficheros.
+
+### Desarrollo en blender
+
+El desarrollo de nuestra versión final del soporte se hizo aplicando al stl original un ajuste leve en su tamaño, junto a una reducción de la carga de vértices y caras que presentaba la figura original. Finalmente tras dejar una versión final que encajaba con aquello que buscábamos, re-exportamos el trabajo a stl para poder posteriormente tomar las medidas pertinentes en FreeCad del soporte hecho.
+
+<p align="center">
+  <img src="images/vista_blender_vertices.png" alt="interfaz" width="45%">
+  <img src="images/vista_blender_cam1.png" alt="interfaz" width="45%">
+</p>
+
+A continuación queda el fichero de blender en su versión final para su copia y libre utilización:
+
+- [Soporte_redu_blend](./models/soporte_redu.blend)
+
+Además de su modelado y ajustado, tratamos de realizar un renderizado del mismo para una mejor presentación y previsualización del resultado final, pero por ciertos problemas con la edición del enfoque de la cámara y los tamaños empleados en edición, no fuimos capaces de lograr un resultado aceptable. Pese a ello, quedan arriba añadidas unas imágenes tomadas del proceso y del modelo visualizado en blender usando distintos modos. Además de las imágenes siguientes, tomadas mientras se intentaba realizar y configurar el renderizado:
+
+<p align="center">
+  <img src="images/vista_pre_renderizado1.png" alt="interfaz" width="45%">
+  <img src="images/vista_pre_renderizado2.png" alt="interfaz" width="45%">
+</p>
+
+Por otro lado, también queda a continnuación el fichero final logrado en formato .stl también para su libre utilización y modificación:
+
+- [Soporte_redu_stl](./models/soporte_redu.stl)
+
+### Vistas y medidas del soporte
+
+Partiendo del modelo stl logrado finalmente, usamos FreeCad para tomar ciertas medidas del mismo y corroborar su validez, así como para sacar ciertos planos y vistas del mismo.
+
+Dado que el modelo no es simétrico, y tiene algunas irregularidades, por tener que adaptarse necesariamente al antebrazo de la Mano de Zeus, hay ciertas medidas que resultan poco intuitivas y puede creerse que son erróneas, pero si comprobamos todas las vistas y nos fijamos en la orientación de las caras laterales, podemos ver que realmente las medidas son las correctas. 
+
+<p align="center">
+  <img src="images/bottom_view.png" alt="bottom_view" width="45%">
+  <img src="images/top_view.png" alt="top_view" width="45%">
+</p>
+
+<p align="center">
+  <img src="images/rear_view.png" alt="rear_view" width="45%">
+  <img src="images/front_view.png" alt="front_view" width="45%">
+</p>
+
+Las dos imágenes superiores muestran la vista desde la parte inferior y superior (bottom y top) respectivamente de izquierda a derecha, y en igual orden podemos ver las vistas desde la parte trasera y delantera (rear y front) en las imágenes inferiores.
+
+Si comparamos y observamos detenidamente la orientación de los canales laterales que unen los dos arcos sobre los que se apoya finalmente el antebrazo, podemos ver que la pieza carece de simetría, y unido esto a que en las vistas superior e inferior observamos los laterales en detalle, viéndose que no conforman rectas perfectas, facilita la posterior comprensión de las medidas tomadas y las leves irregularidades que parecen presentar en un comienzo.
+
+### Mediciones laterales
+
+Adicionalmente a lo anterior, dejamos a continuación dos imágenes con las medidas que más dificultad de comprensión pueden tener, las laterales. Estas medidas fueron tomadas de forma persistente usando la función de regla en FreeCad, y pueden servir como idea previa a la visualización de los planos completos finales de la pieza, para hacerse una idea del tamaño y verificar sus dimensiones:
+
+<p align="center">
+  <img src="images/left_view.png" alt="rear_view" width="48%">
+  <img src="images/right_view.png" alt="front_view" width="48%">
+</p>
+
+La imagen izquierda muestra una vista tomada del lado izquierdo del soporte, con las medidas de sus caras más relevantes indicadas en la propia imagen. De igual manera, la imagen derecha muestra la misma información pero relativa a la vista lateral derecha del modelo. 
+
+Y como un extra más a estas imágenes podemos ver una perspectiva diferente que muestra las medidas de ambos lados en una visualización unificada. La imagen inferior está orientada de manera evidencial a las medidas, correspondiendo aquellas en el lado derecho de la imagen con las medidas del lateral derecho:
+
+<p align="center">
+  <img src="images/both_sides_measured.png" alt="rear_view" width="85%">
+</p>
+
+También queda a continuación el proyecto de FreeCad que hemos empleado para estas mediciones rápidas y explicación de las mismas:
+
+- [Soporte_redu_fcstd](./models/soporte_redu.FCStd)
+
 <div  id='id5' /> 
 
 ## Código de la Mano de Zeus
